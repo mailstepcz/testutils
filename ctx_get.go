@@ -11,3 +11,8 @@ import (
 func getCtx(t *testing.T) context.Context {
 	return t.Context()
 }
+
+// Version ...
+func Version() string {
+	return ">=1.24"
+}
