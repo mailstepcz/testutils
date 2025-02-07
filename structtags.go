@@ -21,7 +21,7 @@ func CheckJSONTags(typ reflect.Type, terms ...string) error {
 		comps := textutils.SplitCamelcasedString(nocopy.String(name), terms...)
 		var sb strings.Builder
 		for i, comp := range comps {
-			comp := nocopy.Bytes(comp)
+			comp := nocopy.Bytes(strings.ToLower(comp))
 			if i > 0 {
 				r, _ := utf8.DecodeRune(comp)
 				utf8.EncodeRune(comp, unicode.ToUpper(r))
