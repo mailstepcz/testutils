@@ -13,6 +13,7 @@ import (
 )
 
 // CheckJSONTags checks a struct's JSON tags.
+// The terms argument specifies abbreviations that ought not to be split, e.g. "id" or "url".
 func CheckJSONTags(typ reflect.Type, terms ...string) error {
 	for _, field := range testutils.JSONFields(typ) {
 		name := nocopy.Bytes(field.Name)
