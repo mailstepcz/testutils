@@ -2,8 +2,6 @@ module github.com/mailstepcz/testutils
 
 go 1.23
 
-toolchain go1.24rc2
-
 require (
 	github.com/fealsamh/go-utils v0.1.40
 	github.com/google/uuid v1.6.0
