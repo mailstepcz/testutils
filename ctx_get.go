@@ -1,6 +1,3 @@
-//go:build go1.24
-// +build go1.24
-
 package testutils
 
 import (
@@ -10,9 +7,4 @@ import (
 
 func getCtx(t *testing.T) context.Context {
 	return t.Context()
-}
-
-// Version ...
-func Version() string {
-	return ">=1.24"
 }
