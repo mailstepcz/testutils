@@ -3,7 +3,7 @@ module github.com/mailstepcz/testutils
 go 1.24
 
 require (
-	github.com/fealsamh/go-utils v0.1.41
+	github.com/fealsamh/go-utils v0.1.40
 	github.com/google/uuid v1.6.0
 	github.com/mailstepcz/grpcerr v0.1.3
 	github.com/mailstepcz/httperr v0.1.2
