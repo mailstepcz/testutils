@@ -35,7 +35,7 @@ func TestJSONTagChecker(t *testing.T) {
 
 		err := CheckJSONTags(reflect.TypeFor[person](), "id")
 		req.NotNil(err)
-		req.Contains("non-matching field 'fullName' ('fullName' <> 'fullname')", err.Error())
+		req.Contains("non-matching field 'FullName' ('fullName' <> 'fullname')", err.Error())
 	})
 
 	t.Run("failure in abbreviation", func(t *testing.T) {
@@ -50,6 +50,6 @@ func TestJSONTagChecker(t *testing.T) {
 
 		err := CheckJSONTags(reflect.TypeFor[person]())
 		req.NotNil(err)
-		req.Contains("non-matching field 'addressIDs' ('addressIDs' <> 'addressIds')", err.Error())
+		req.Contains("non-matching field 'AddressIDs' ('addressIDs' <> 'addressIds')", err.Error())
 	})
 }

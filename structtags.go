@@ -16,7 +16,7 @@ import (
 // The terms argument specifies abbreviations that ought not to be split, e.g. "id" or "url".
 func CheckJSONTags(typ reflect.Type, terms ...string) error {
 	for _, field := range testutils.JSONFields(typ) {
-		name := nocopy.Bytes(field.Name)
+		name := []byte(field.Name)
 		r, _ := utf8.DecodeRune(name)
 		utf8.EncodeRune(name, unicode.ToLower(r))
 		comps := textutils.SplitCamelcasedString(nocopy.String(name), terms...)
