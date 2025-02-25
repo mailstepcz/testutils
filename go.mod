@@ -2,8 +2,6 @@ module github.com/mailstepcz/testutils
 
 go 1.24
 
-toolchain go1.24.0
-
 require (
 	github.com/fealsamh/go-utils v0.1.41
 	github.com/google/uuid v1.6.0
@@ -20,6 +18,7 @@ require (
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	golang.org/x/sys v0.30.0 // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20250224174004-546df14abb99 // indirect
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20250212204824-5a70512c5d8b // indirect
 	google.golang.org/protobuf v1.36.5 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
