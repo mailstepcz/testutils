@@ -7,9 +7,9 @@ import (
 	"unicode"
 	"unicode/utf8"
 
-	"github.com/fealsamh/go-utils/nocopy"
-	"github.com/fealsamh/go-utils/testutils"
-	"github.com/fealsamh/go-utils/textutils"
+	"github.com/mailstepcz/go-utils/nocopy"
+	"github.com/mailstepcz/go-utils/testutils"
+	"github.com/mailstepcz/go-utils/textutils"
 )
 
 // CheckJSONTags checks a struct's JSON tags.
